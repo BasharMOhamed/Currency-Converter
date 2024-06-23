@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NG+Modern:wght@100..400&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Playwrite NG Modern";
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: blueviolet; */
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.amount__input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding: 0.5rem;
+  outline: none;
+}
+.amount__input::-webkit-outer-spin-button,
+.amount__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.currency__container {
+  background-color: white;
+  width: 20rem;
+  border-radius: 7px;
+  padding: 1rem 1rem;
+  box-shadow: 0px 5px 22px 5px rgb(0, 0, 0, 0.25);
+}
+.flex__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-bottom: 1rem;
+}
+
+.currencies__container {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exchange__result,
+.title {
+  text-align: center;
+}
+
+.country__flag {
+  width: 1.5rem;
+}
+
+.switch__btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.switch__icon {
+  width: 20px;
+}
+
+.selector {
+  border: none;
+  outline: none;
+}
+
+.selector__container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid grey;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: all ease-in-out 0.2s;
+}
+
+.selector__container:hover {
+  border-color: blueviolet;
+}

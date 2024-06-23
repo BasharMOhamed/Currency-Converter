@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="currency__container">
+        <h2 class="title">Currency Converter</h2>
+
+        <div class="flex__container amount__container">
+          <label for="amount">Enter Amount</label>
+          <input value="1" class="amount__input" type="number" id="amount" />
+        </div>
+
+        <div class="flex__container currencies__container">
+          <div class="flex__container from__container">
+            <label for="from">From:</label>
+            <div class="selector__container">
+              <img
+                src="https://flagcdn.com/16x12/us.png"
+                alt="Country Flag"
+                class="from__flag country__flag"
+              />
+              <select class="selector from__selector" id="from"></select>
+            </div>
+          </div>
+          <button class="btn switch__btn">
+            <img
+              src="./exchange-svgrepo-com.svg"
+              alt="Switch Icon"
+              class="switch__icon"
+            />
+          </button>
+          <div class="flex__container to__container">
+            <label for="to">To:</label>
+            <div class="selector__container">
+              <img
+                src="https://flagcdn.com/16x12/eg.png"
+                alt="Country Flag"
+                class="to__flag country__flag"
+              />
+              <select class="selector to__selector" id="to"></select>
+            </div>
+          </div>
+        </div>
+
+        <p class="exchange__result">1 EUR = 0.5555 USD</p>
+      </div>
+    </main>
+    <script src="./script.js" type="module"></script>
+  </body>
+</html>
